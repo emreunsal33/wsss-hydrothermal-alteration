@@ -21,8 +21,15 @@ from tqdm import tqdm
 # ---------------------------------------------------------
 # 1. AYARLAR (Sizin Path'leriniz)
 # ---------------------------------------------------------
-IMAGE_DIR = "/Users/emreunsal/Hidrothermal-Alteration/ince_kesit_big"
-MINERAL_CLASSES = ['epidotlasma', 'karbonatlasma', 'kloritlesme', 'serizit', 'silislesme']
+IMAGE_DIR = "data/images"
+MINERAL_CLASSES = [
+    "Carbonatization",
+    "Chloritization",
+    "Epidotization",
+    "Sericitization",
+    "Silicification"
+]
+
 
 # Modelinize girecek boyutla aynı olmalı (Doğru istatistik için)
 IMG_SIZE = (224, 224) 
