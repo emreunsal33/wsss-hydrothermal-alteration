@@ -35,17 +35,21 @@ from sklearn.preprocessing import label_binarize
 # ---------------------------------------------------------
 # 1. CONFIGURATION
 # ---------------------------------------------------------
-IMAGE_DIR = "/Users/emreunsal/Hidrothermal-Alteration/ince_kesit_big"
+IMAGE_DIR = "data/images"
+MASK_DIR = "outputs/pseudomasks"
+SAVE_PATH = "outputs/checkpoints"
 
-# --- GÜNCELLEME: V3 AGGRESSIVE MASKELER ---
-MASK_DIR = "/Users/emreunsal/Hidrothermal-Alteration/Generated_Masks_V3_Aggressive_Fixed"
-SAVE_PATH = "/Users/emreunsal/Hidrothermal-Alteration/Results_PyTorch_V3_Ultimate_Fixed"
 
 if not os.path.exists(SAVE_PATH): os.makedirs(SAVE_PATH)
 
 # Mineral Classes
 MINERAL_DIRS = ['epidotlasma', 'karbonatlasma', 'kloritlesme', 'serizit', 'silislesme']
-MINERAL_CLASSES_EN = ['Epidotization', 'Carbonatization', 'Chloritization', 'Sericitization', 'Silicification']
+MINERAL_CLASSES_EN = [
+    "Carbonatization",
+    "Chloritization",
+    "Epidotization",
+    "Sericitization",
+    "Silicification"]
 CLASS_NAMES_EN = ['Background'] + MINERAL_CLASSES_EN
 
 CLASS_MAP = {cls: i+1 for i, cls in enumerate(MINERAL_DIRS)}
