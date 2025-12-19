@@ -23,11 +23,18 @@ from pydensecrf.utils import unary_from_labels
 # ---------------------------------------------------------
 # 1. AYARLAR (AGRESİF MOD)
 # ---------------------------------------------------------
-MODEL_PATH = "/Users/emreunsal/Hidrothermal-Alteration/Results_PyTorch/best_model_efficientnet.pth"
-DATASET_PATH = "/Users/emreunsal/Hidrothermal-Alteration/ince_kesit_big"
-OUTPUT_MASK_DIR = "/Users/emreunsal/Hidrothermal-Alteration/Generated_Masks_V3_Aggressive_Fixed" 
+MODEL_PATH = "outputs/checkpoints/best_classifier.pth"
+DATASET_PATH = "data/images"
+OUTPUT_MASK_DIR = "outputs/pseudomasks"
 
-MINERAL_CLASSES = ['epidotlasma', 'karbonatlasma', 'kloritlesme', 'serizit', 'silislesme']
+MINERAL_CLASSES = [
+    "Carbonatization",
+    "Chloritization",
+    "Epidotization",
+    "Sericitization",
+    "Silicification"
+]
+
 IMG_SIZE = (224, 224)
 
 # --- Adaptive Treshold ---
