@@ -21,8 +21,15 @@ import torch
 # ---------------------------------------------------------
 # 1. AYARLAR
 # ---------------------------------------------------------
-MASK_DIR = "/Users/emreunsal/Hidrothermal-Alteration/Generated_Masks_V3_Aggressive"
-MINERAL_CLASSES = ['epidotlasma', 'karbonatlasma', 'kloritlesme', 'serizit', 'silislesme']
+MASK_DIR = "outputs/pseudomasks"
+MINERAL_CLASSES = [
+    "Carbonatization",
+    "Chloritization",
+    "Epidotization",
+    "Sericitization",
+    "Silicification"
+]
+
 IMG_SIZE = (224, 224) # Eğitimdeki boyutla AYNI olmalı
 
 # Sınıf Haritası (0: Arka Plan, 1..5: Mineraller)
