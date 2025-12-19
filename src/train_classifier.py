@@ -22,9 +22,17 @@ from torchvision import models, transforms
 # ---------------------------------------------------------
 # 1. AYARLAR VE DONANIM SEÇİMİ (M3 MAX - MPS)
 # ---------------------------------------------------------
-DATASET_PATH = "/Users/emreunsal/Hidrothermal-Alteration/ince_kesit_big"
-SAVE_PATH = "/Users/emreunsal/Hidrothermal-Alteration/Results_PyTorch"
-MINERAL_CLASSES = ['epidotlasma', 'karbonatlasma', 'kloritlesme', 'serizit', 'silislesme']
+DATASET_PATH = "data/images"
+SAVE_PATH = "outputs/checkpoints"
+
+MINERAL_CLASSES = [
+    "Carbonatization",
+    "Chloritization",
+    "Epidotization",
+    "Sericitization",
+    "Silicification"
+]
+
 
 # Hiperparametreler
 BATCH_SIZE = 32         
