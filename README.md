@@ -52,7 +52,7 @@ This pipeline enables the generation of pixel-wise mineral maps using only image
 
 ## Notes and Limitations
 
-- The dataset does not include manually annotated pixel-level ground truth masks.
+- The dataset does not include manually annotated pixel-level pseudo-masks.
 - Images are intended for algorithm development and benchmarking rather than absolute mineral quantification.
 - Geological domain knowledge is recommended for interpretation of the results.
 
@@ -69,6 +69,6 @@ If you use this dataset in your research, please cite the corresponding article:
 ## Contact
 
 **Emre Ünsal**  
-Department of Software Engineering  
-Sivas Cumhuriyet University, Türkiye  
-📧 eunsal@cumhuriyet.edu.tr
+Department of Computer Engineering 
+Balikesir University, Türkiye  
+📧 eunsal@balikesir.edu.tr
